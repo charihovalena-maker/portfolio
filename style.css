@@ -473,7 +473,16 @@ a {
 
     backdrop-filter: blur(12px);
 }
+.hero__status span {
+    width: 9px;
+    height: 9px;
 
+    background: #d874b0;
+    border-radius: 10%;
+
+    box-shadow:
+        0 0 0 5px rgba(116, 216, 172, 0.15);
+}
 .hero__eyebrow {
     margin-bottom: 16px;
 
