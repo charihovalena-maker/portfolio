@@ -473,16 +473,18 @@ a {
 
     backdrop-filter: blur(12px);
 }
+
 .hero__status span {
     width: 9px;
     height: 9px;
 
     background: #d874b0;
-    border-radius: 10%;
+    border-radius: 50%;
 
     box-shadow:
         0 0 0 5px rgba(116, 216, 172, 0.15);
 }
+
 .hero__eyebrow {
     margin-bottom: 16px;
 
@@ -823,6 +825,14 @@ a {
         );
 }
 
+.project--brown {
+    background:
+        linear-gradient(
+            #e0d7c0,
+            #b38f5d
+        );
+}
+
 .project--purple {
     color: #ffffff;
 
@@ -844,11 +854,12 @@ a {
 }
 
 .project--lavender {
+    color:#ffffff;
     background:
         linear-gradient(
             145deg,
-            #8cadf0,
-            #75c8cd
+            #a70808,
+            #000000
         );
 }
 
