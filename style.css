@@ -853,6 +853,26 @@ a {
         );
 }
 
+.project--pinkl {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            hwb(26 13% 18%),
+            #FF7A95
+        );
+}
+
+.project--besh {
+    background:
+        linear-gradient(
+            145deg,
+            #E699B3,
+            #EBE6E0
+        );
+}
+
 .project--lavender {
     color:#ffffff;
     background:
