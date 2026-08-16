@@ -859,7 +859,7 @@ a {
     background:
         linear-gradient(
             145deg,
-            hwb(26 13% 18%),
+            #ffedeb,
             #ff7a95
         );
 }
