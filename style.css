@@ -1137,505 +1137,7 @@ a {
     text-transform: uppercase;
 }
 
-/* =========================================
-   POSTERS
-========================================= */
 
-.posters-section {
-    padding-top: 50px;
-    padding-bottom: 120px;
-}
-
-
-/* =========================================
-   MAIN HEADER
-========================================= */
-
-.posters-heading {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 1.15fr)
-        minmax(280px, 0.55fr);
-
-    align-items: end;
-
-    gap: 100px;
-
-    margin-bottom: 65px;
-}
-
-
-.posters-label {
-    display: flex;
-    align-items: center;
-
-    gap: 9px;
-
-    margin-bottom: 18px;
-
-    color: var(--pink);
-
-    font-size: 12px;
-    font-weight: 800;
-
-    letter-spacing: 0.08em;
-}
-
-
-.posters-label span {
-    width: 9px;
-    height: 9px;
-
-    flex-shrink: 0;
-
-    background: var(--pink);
-
-    border-radius: 50%;
-}
-
-
-.posters-heading h2 {
-    max-width: 760px;
-
-    color: var(--text);
-
-    font-size:
-        clamp(50px, 6vw, 78px);
-
-    font-weight: 700;
-
-    line-height: 0.96;
-
-    letter-spacing: -0.06em;
-}
-
-
-.posters-heading h2 span {
-    display: block;
-
-    color: var(--purple);
-}
-
-
-.posters-heading__description {
-    max-width: 390px;
-
-    padding-bottom: 7px;
-
-    color: var(--muted);
-
-    font-size: 16px;
-
-    line-height: 1.55;
-}
-
-
-/* =========================================
-   SERIES
-========================================= */
-
-.poster-series {
-    padding:
-        31px 0
-        63px;
-
-    border-top:
-        1px solid rgba(108, 78, 105, 0.13);
-}
-
-
-.poster-series__header {
-    display: grid;
-
-    grid-template-columns:
-        minmax(300px, 1fr)
-        minmax(270px, 0.7fr)
-        auto;
-
-    align-items: center;
-
-    gap: 60px;
-
-    margin-bottom: 30px;
-}
-
-
-/* NUMBER */
-
-.poster-series__number {
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: #ef79a4;
-
-    font-size: 12px;
-
-    font-weight: 800;
-}
-
-
-/* TITLE */
-
-.poster-series__title h3 {
-    color: #3d2d42;
-
-    font-size:
-        clamp(35px, 4vw, 51px);
-
-    font-weight: 600;
-
-    line-height: 1;
-
-    letter-spacing: -0.05em;
-}
-
-
-/* DESCRIPTION */
-
-.poster-series__description {
-    max-width: 360px;
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-    line-height: 1.55;
-}
-
-
-/* COUNTER */
-
-.poster-series__counter {
-    min-width: 103px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding:
-        10px 16px;
-
-    color: #9c59cc;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f2e4ff,
-            #ffe0f0
-        );
-
-    border-radius: 100px;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    white-space: nowrap;
-}
-
-
-/* =========================================
-   POSTER GRIDS
-========================================= */
-
-.poster-grid {
-    display: grid;
-
-    align-items: start;
-}
-
-
-/* EVERYDAY STORIES */
-
-.poster-grid--6 {
-    grid-template-columns:
-        repeat(6, minmax(0, 1fr));
-
-    gap: 18px;
-}
-
-
-/* CULTURAL CODE */
-
-.poster-grid--9 {
-    grid-template-columns:
-        repeat(9, minmax(0, 1fr));
-
-    gap: 11px;
-}
-
-
-/* FORM & BALANCE */
-
-.poster-grid--4 {
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 31px;
-}
-
-
-/* =========================================
-   POSTER
-========================================= */
-
-.poster {
-    min-width: 0;
-
-    display: block;
-
-    cursor: pointer;
-}
-
-
-.poster__image {
-    position: relative;
-
-    width: 100%;
-
-    overflow: hidden;
-
-    background: #f7f2ef;
-
-    box-shadow:
-        0 12px 27px
-        rgba(83, 55, 78, 0.09);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-
-.poster__image img {
-    width: 100%;
-    height: auto;
-
-    display: block;
-
-    aspect-ratio: 0.70;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    transition:
-        transform 0.5s ease;
-}
-
-
-/* POSTER NAME */
-
-.poster > span {
-    display: block;
-
-    margin-top: 12px;
-
-    color: #665a67;
-
-    font-size: 11px;
-
-    line-height: 1.35;
-}
-
-
-/* =========================================
-   HOVER
-========================================= */
-
-.poster:hover .poster__image {
-    transform:
-        translateY(-6px);
-
-    box-shadow:
-        0 22px 46px
-        rgba(83, 55, 78, 0.17);
-}
-
-
-.poster:hover .poster__image img {
-    transform:
-        scale(1.025);
-}
-
-
-/* =========================================
-   FORM & BALANCE BIGGER
-========================================= */
-
-.poster-grid--4 .poster > span {
-    margin-top: 13px;
-
-    font-size: 12px;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 1050px) {
-
-    .posters-heading {
-        grid-template-columns:
-            1fr 0.6fr;
-
-        gap: 50px;
-    }
-
-
-    .poster-series__header {
-        grid-template-columns:
-            1fr 0.7fr auto;
-
-        gap: 30px;
-    }
-
-
-    .poster-grid--6 {
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        gap: 24px;
-    }
-
-
-    .poster-grid--9 {
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        gap: 24px;
-    }
-
-
-    .poster-grid--4 {
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        gap: 28px;
-    }
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 760px) {
-
-    .posters-section {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-
-    .posters-heading {
-        display: block;
-
-        margin-bottom: 50px;
-    }
-
-
-    .posters-heading__description {
-        margin-top: 27px;
-    }
-
-
-    .poster-series {
-        padding:
-            28px 0
-            50px;
-    }
-
-
-    .poster-series__header {
-        display: grid;
-
-        grid-template-columns:
-            1fr auto;
-
-        gap: 20px;
-
-        margin-bottom: 25px;
-    }
-
-
-    .poster-series__description {
-        grid-column: 1 / -1;
-
-        grid-row: 2;
-
-        max-width: 400px;
-    }
-
-
-    .poster-series__counter {
-        align-self: start;
-    }
-
-
-    .poster-grid--6,
-    .poster-grid--9,
-    .poster-grid--4 {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap:
-            25px 12px;
-    }
-
-
-    .poster > span {
-        margin-top: 8px;
-
-        font-size: 10px;
-    }
-
-}
-
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 430px) {
-
-    .posters-heading h2 {
-        font-size: 45px;
-    }
-
-
-    .poster-series__title h3 {
-        font-size: 32px;
-    }
-
-
-    .poster-series__counter {
-        min-width: auto;
-
-        padding:
-            8px 11px;
-
-        font-size: 9px;
-    }
-
-
-    .poster-series__header {
-        gap: 12px;
-    }
-
-
-    .poster-grid--6,
-    .poster-grid--9,
-    .poster-grid--4 {
-        gap:
-            22px 9px;
-    }
-
-}
 
 /* =========================
    ABOUT
@@ -2395,4 +1897,504 @@ a {
     .about__sticker {
         width: 180px;
     }
+}
+
+/* =========================================
+   POSTERS
+========================================= */
+
+.posters-section {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+
+/* =========================================
+   MAIN HEADER
+========================================= */
+
+.posters-heading {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(280px, 0.55fr);
+
+    align-items: end;
+
+    gap: 100px;
+
+    margin-bottom: 65px;
+}
+
+
+.posters-label {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    color: var(--pink);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+
+.posters-label span {
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    background: var(--pink);
+
+    border-radius: 50%;
+}
+
+
+.posters-heading h2 {
+    max-width: 760px;
+
+    color: var(--text);
+
+    font-size:
+        clamp(50px, 6vw, 78px);
+
+    font-weight: 700;
+
+    line-height: 0.96;
+
+    letter-spacing: -0.06em;
+}
+
+
+.posters-heading h2 span {
+    display: block;
+
+    color: var(--purple);
+}
+
+
+.posters-heading__description {
+    max-width: 390px;
+
+    padding-bottom: 7px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   SERIES
+========================================= */
+
+.poster-series {
+    padding:
+        31px 0
+        63px;
+
+    border-top:
+        1px solid rgba(108, 78, 105, 0.13);
+}
+
+
+.poster-series__header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, 1fr)
+        minmax(270px, 0.7fr)
+        auto;
+
+    align-items: center;
+
+    gap: 60px;
+
+    margin-bottom: 30px;
+}
+
+
+/* NUMBER */
+
+.poster-series__number {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #ef79a4;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* TITLE */
+
+.poster-series__title h3 {
+    color: #3d2d42;
+
+    font-size:
+        clamp(35px, 4vw, 51px);
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+
+/* DESCRIPTION */
+
+.poster-series__description {
+    max-width: 360px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+
+/* COUNTER */
+
+.poster-series__counter {
+    min-width: 103px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        10px 16px;
+
+    color: #9c59cc;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2e4ff,
+            #ffe0f0
+        );
+
+    border-radius: 100px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   POSTER GRIDS
+========================================= */
+
+.poster-grid {
+    display: grid;
+
+    align-items: start;
+}
+
+
+/* EVERYDAY STORIES */
+
+.poster-grid--6 {
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* CULTURAL CODE */
+
+.poster-grid--9 {
+    grid-template-columns:
+        repeat(9, minmax(0, 1fr));
+
+    gap: 11px;
+}
+
+
+/* FORM & BALANCE */
+
+.poster-grid--4 {
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 31px;
+}
+
+
+/* =========================================
+   POSTER
+========================================= */
+
+.poster {
+    min-width: 0;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.poster__image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #f7f2ef;
+
+    box-shadow:
+        0 12px 27px
+        rgba(83, 55, 78, 0.09);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.poster__image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    aspect-ratio: 0.70;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* POSTER NAME */
+
+.poster > span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #665a67;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.poster:hover .poster__image {
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 22px 46px
+        rgba(83, 55, 78, 0.17);
+}
+
+
+.poster:hover .poster__image img {
+    transform:
+        scale(1.025);
+}
+
+
+/* =========================================
+   FORM & BALANCE BIGGER
+========================================= */
+
+.poster-grid--4 .poster > span {
+    margin-top: 13px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .posters-heading {
+        grid-template-columns:
+            1fr 0.6fr;
+
+        gap: 50px;
+    }
+
+
+    .poster-series__header {
+        grid-template-columns:
+            1fr 0.7fr auto;
+
+        gap: 30px;
+    }
+
+
+    .poster-grid--6 {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 24px;
+    }
+
+
+    .poster-grid--9 {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 24px;
+    }
+
+
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 28px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+    .posters-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .posters-heading {
+        display: block;
+
+        margin-bottom: 50px;
+    }
+
+
+    .posters-heading__description {
+        margin-top: 27px;
+    }
+
+
+    .poster-series {
+        padding:
+            28px 0
+            50px;
+    }
+
+
+    .poster-series__header {
+        display: grid;
+
+        grid-template-columns:
+            1fr auto;
+
+        gap: 20px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .poster-series__description {
+        grid-column: 1 / -1;
+
+        grid-row: 2;
+
+        max-width: 400px;
+    }
+
+
+    .poster-series__counter {
+        align-self: start;
+    }
+
+
+    .poster-grid--6,
+    .poster-grid--9,
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            25px 12px;
+    }
+
+
+    .poster > span {
+        margin-top: 8px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .posters-heading h2 {
+        font-size: 45px;
+    }
+
+
+    .poster-series__title h3 {
+        font-size: 32px;
+    }
+
+
+    .poster-series__counter {
+        min-width: auto;
+
+        padding:
+            8px 11px;
+
+        font-size: 9px;
+    }
+
+
+    .poster-series__header {
+        gap: 12px;
+    }
+
+
+    .poster-grid--6,
+    .poster-grid--9,
+    .poster-grid--4 {
+        gap:
+            22px 9px;
+    }
+
 }
