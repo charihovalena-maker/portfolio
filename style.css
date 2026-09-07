@@ -2398,3 +2398,119 @@ a {
     }
 
 }
+/* =========================================
+   POSTERS — LARGE SCREEN FIX
+========================================= */
+
+/* Постеры могут быть шире остальных секций */
+.posters-section .container {
+    width: min(calc(100% - 80px), 1680px);
+}
+
+
+/* Обычный desktop */
+.poster-grid--6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.poster-grid--9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.poster-grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+/* Не позволяем постеру вылезать из своей колонки */
+.poster {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.poster__image {
+    width: 100%;
+    min-width: 0;
+}
+
+.poster__image img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 0.7;
+
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* =========================================
+   БОЛЬШИЕ МОНИТОРЫ — 1600+
+========================================= */
+
+@media (min-width: 1600px) {
+
+    .posters-section .container {
+        width: min(calc(100% - 120px), 1720px);
+    }
+
+    .posters-heading {
+        grid-template-columns: 1.2fr 0.55fr;
+        gap: 120px;
+    }
+
+    .posters-heading h2 {
+        font-size: 76px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(420px, 1fr)
+            minmax(320px, 0.7fr)
+            auto;
+
+        gap: 70px;
+    }
+
+    .poster-grid--6 {
+        gap: 22px;
+    }
+
+    .poster-grid--9 {
+        gap: 14px;
+    }
+
+    .poster-grid--4 {
+        gap: 38px;
+    }
+}
+
+
+/* =========================================
+   ОЧЕНЬ БОЛЬШИЕ МОНИТОРЫ — 2000+
+========================================= */
+
+@media (min-width: 2000px) {
+
+    .posters-section .container {
+        max-width: 1800px;
+    }
+
+    .poster-grid--6 {
+        gap: 26px;
+    }
+
+    .poster-grid--9 {
+        gap: 16px;
+    }
+
+    .poster-grid--4 {
+        gap: 44px;
+    }
+}
