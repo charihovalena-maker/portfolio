@@ -2238,7 +2238,7 @@ a {
    TABLET
 ========================================= */
 
-@media (max-width: 1050px) {
+@media (max-width: 1440px) {
 
     .posters-heading {
         grid-template-columns:
