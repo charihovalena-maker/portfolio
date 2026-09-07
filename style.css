@@ -2533,4 +2533,478 @@ a {
         width: calc(100% - 24px);
     }
 }
->>>>>>> d040cb900c0f50a47fa56de3e9c9b98cef1365f7
+/* =========================================================
+   POSTERS — RESPONSIVE
+   max desktop: 1440px
+========================================================= */
+
+
+/* =========================
+   1200 — 1440
+   Большой desktop
+========================= */
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+    .posters-section .container {
+        width: calc(100% - 160px);
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        grid-template-columns:
+            minmax(0, 1.15fr)
+            minmax(300px, 0.55fr);
+
+        gap: 70px;
+
+        margin-bottom: 55px;
+    }
+
+    .posters-heading h2 {
+        font-size: clamp(56px, 5vw, 72px);
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(300px, 1fr)
+            minmax(260px, 0.7fr)
+            auto;
+
+        gap: 45px;
+    }
+
+    /* 6 постеров */
+    .poster-grid--6 {
+        grid-template-columns:
+            repeat(6, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+    /* 9 постеров */
+    .poster-grid--9 {
+        grid-template-columns:
+            repeat(9, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    /* 4 постера */
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+        gap: 28px;
+    }
+}
+
+
+/* =========================
+   992 — 1199
+   Небольшой ноутбук
+========================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .posters-section .container {
+        width: calc(100% - 80px);
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(280px, 0.55fr);
+
+        gap: 50px;
+
+        margin-bottom: 48px;
+    }
+
+    .posters-heading h2 {
+        font-size: 58px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(260px, 1fr)
+            minmax(240px, 0.75fr)
+            auto;
+
+        gap: 28px;
+    }
+
+    /* Everyday */
+    .poster-grid--6 {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+
+    /* Cultural Code */
+    .poster-grid--9 {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+
+    /* Form & Balance */
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 28px;
+    }
+}
+
+
+/* =========================
+   768 — 991
+   Планшет горизонтальный
+========================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .posters-section {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .posters-section .container {
+        width: calc(100% - 48px);
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-bottom: 42px;
+    }
+
+    .posters-heading h2 {
+        font-size: 54px;
+    }
+
+    .posters-heading__description {
+        max-width: 500px;
+    }
+
+    .poster-series {
+        padding:
+            28px 0
+            52px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(0, 1fr)
+            auto;
+
+        gap:
+            14px 20px;
+    }
+
+    .poster-series__description {
+        grid-column: 1 / -1;
+
+        max-width: 500px;
+    }
+
+    .poster-grid--6,
+    .poster-grid--9 {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+}
+
+
+/* =========================
+   576 — 767
+   Планшет вертикальный /
+   большой телефон
+========================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .posters-section {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .posters-section .container {
+        width: calc(100% - 32px);
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        display: block;
+
+        margin-bottom: 38px;
+    }
+
+    .posters-heading h2 {
+        font-size: 48px;
+    }
+
+    .posters-heading__description {
+        margin-top: 22px;
+
+        max-width: 480px;
+
+        font-size: 15px;
+    }
+
+    .poster-series {
+        padding:
+            26px 0
+            46px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(0, 1fr)
+            auto;
+
+        gap:
+            14px 18px;
+
+        margin-bottom: 22px;
+    }
+
+    .poster-series__title h3 {
+        font-size: 34px;
+    }
+
+    .poster-series__description {
+        grid-column: 1 / -1;
+    }
+
+    .poster-grid--6,
+    .poster-grid--9,
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            24px 12px;
+    }
+
+    .poster > span {
+        margin-top: 8px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* =========================
+   431 — 575
+   Телефон
+========================= */
+
+@media (min-width: 431px) and (max-width: 575px) {
+
+    .posters-section {
+        padding-top: 24px;
+        padding-bottom: 60px;
+    }
+
+    .posters-section .container {
+        width: calc(100% - 24px);
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        display: block;
+
+        margin-bottom: 34px;
+    }
+
+    .posters-label {
+        font-size: 10px;
+    }
+
+    .posters-heading h2 {
+        font-size: 43px;
+
+        line-height: 0.98;
+    }
+
+    .posters-heading__description {
+        margin-top: 20px;
+
+        font-size: 14px;
+    }
+
+    .poster-series {
+        padding:
+            24px 0
+            42px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(0, 1fr)
+            auto;
+
+        gap:
+            12px 10px;
+
+        margin-bottom: 20px;
+    }
+
+    .poster-series__title h3 {
+        font-size: 30px;
+    }
+
+    .poster-series__description {
+        grid-column: 1 / -1;
+
+        font-size: 13px;
+    }
+
+    .poster-series__counter {
+        min-width: auto;
+
+        padding:
+            8px 10px;
+
+        font-size: 8px;
+    }
+
+    .poster-grid--6,
+    .poster-grid--9,
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            20px 9px;
+    }
+
+    .poster > span {
+        margin-top: 7px;
+
+        font-size: 9px;
+    }
+}
+
+
+/* =========================
+   320 — 430
+   Маленький телефон
+========================= */
+
+@media (max-width: 430px) {
+
+    .posters-section {
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+
+    .posters-section .container {
+        width: calc(100% - 20px);
+        margin-inline: auto;
+    }
+
+    .posters-heading {
+        display: block;
+
+        margin-bottom: 30px;
+    }
+
+    .posters-label {
+        margin-bottom: 14px;
+
+        font-size: 9px;
+    }
+
+    .posters-label span {
+        width: 7px;
+        height: 7px;
+    }
+
+    .posters-heading h2 {
+        font-size: 38px;
+
+        line-height: 0.98;
+    }
+
+    .posters-heading__description {
+        margin-top: 18px;
+
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .poster-series {
+        padding:
+            22px 0
+            38px;
+    }
+
+    .poster-series__header {
+        grid-template-columns:
+            minmax(0, 1fr)
+            auto;
+
+        gap:
+            10px 8px;
+
+        margin-bottom: 18px;
+    }
+
+    .poster-series__number {
+        font-size: 10px;
+    }
+
+    .poster-series__title h3 {
+        font-size: 27px;
+    }
+
+    .poster-series__description {
+        grid-column: 1 / -1;
+
+        font-size: 12px;
+    }
+
+    .poster-series__counter {
+        min-width: auto;
+
+        padding:
+            7px 9px;
+
+        font-size: 7px;
+    }
+
+    .poster-grid--6,
+    .poster-grid--9,
+    .poster-grid--4 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            18px 8px;
+    }
+
+    .poster > span {
+        margin-top: 6px;
+
+        font-size: 9px;
+    }
+}
