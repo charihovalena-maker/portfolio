@@ -2514,3 +2514,20 @@ a {
         gap: 44px;
     }
 }
+.posters-section .container {
+    width: calc(100% - 200px);
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .posters-section .container {
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 760px) {
+    .posters-section .container {
+        width: calc(100% - 24px);
+    }
+}
